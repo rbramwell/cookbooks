@@ -43,11 +43,11 @@ node[:gem_hash].each do |k,v|
 end
 end
 
-execute "download code" do
-	cwd "/tmp/" 
-	command "git clone https://github.com/test-kitchen/kitchen-docs.git"
-	not_if { File.exists?("/tmp/kitchen-docs/Gemfile")}
-end
+#execute "download code" do
+#	cwd "/tmp/" 
+#	command "git clone https://github.com/test-kitchen/kitchen-docs.git"
+#	not_if { File.exists?("/tmp/kitchen-docs/Gemfile")}
+#end
 
 cookbook_file ::File.join( ENV['HOME'], '.ssh', 'config' ) do
   mode 0644
