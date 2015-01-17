@@ -66,14 +66,18 @@ cookbook_file "/tmp/kitchen-docs/Gemfile" do
 	action :create
 end
 
-
+execute "Add /usr/local/bin to $PATH" do
+	command "export PATH=$PATH:/usr/local/bin"
+	user "root"
+end
 
 execute "Execute Bundler Install" do
 	cwd "/tmp/kitchen-docs"
-	command "bundle install"
+	command "/usr/local/bin/bundle install"
 end
 
 execute "Run Middleman Server" do
 	cwd "/tmp/kitchen-docs"
-	command "bundle exec middleman server -p 11899"
+	command "/usr/local/bin/bundle exec middleman server -p 11899"
+	user "root"
 end
