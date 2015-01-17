@@ -26,10 +26,23 @@ end
 #remote_file chef_pkg do
 #	action :create
 #	source chef_pkg_url
+#   not_if { File.exists?("/tmp/chef.rpm") }
 #end
 
 #rpm_package chef_pkg do
 #end
+
+node[:kitchen][:packages].each do |pkg|
+	chef_package pkg do
+	action :install
+end
+end
+
+node[:gem_hash].each do |k,v|
+	chef_gem k do
+	action :install
+end
+end
 
 node[:kitchen][:packages].each do |pkg|
 	package pkg do
@@ -50,6 +63,7 @@ end
 #end
 
 cookbook_file ::File.join( ENV['HOME'], '.ssh', 'config' ) do
+  source "ssh_config"
   mode 0644
 end
 
