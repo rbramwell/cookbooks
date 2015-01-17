@@ -43,18 +43,21 @@ node[:gem_hash].each do |k,v|
 end
 end
 
-
 execute "download code" do
 	cwd "/tmp/" 
 	command "git clone https://github.com/test-kitchen/kitchen-docs.git"
 	not_if { File.exists?("/tmp/kitchen-docs/Gemfile")}
 end
 
-#git "/tmp/kitchen-docs" do
-#	repository repo
-#	reference "master"
-#	action :checkout
-#end
+cookbook_file ::File.join( ENV['HOME'], '.ssh', 'config' ) do
+  mode 0644
+end
+
+git "/tmp/kitchen-docs" do
+	repository repo
+	reference "master"
+	action :checkout
+end
 
 cookbook_file "/tmp/kitchen-docs/Gemfile" do
 	source "Gemfile"
@@ -63,10 +66,10 @@ end
 
 execute "Execute Bundler Install" do
 	cwd "/tmp/kitchen-docs"
-	command "bundle install"
+	command "/opt/chef/embedded/bin/bundle install"
 end
 
 execute "Run Middleman Server" do
 	cwd "/tmp/kitchen-docs"
-	command "bundle exec middleman server -p 11899"
+	command "/opt/chef/embedded/bin/bundle exec middleman server -p 11899"
 end
