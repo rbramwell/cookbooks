@@ -10,9 +10,6 @@
 #chef_pkg_url = "#{node[:kitchen][:chef][:url]}"
 #chef_pkg = "#{node[:kitchen][:chef][:package]}"
 
-include 'ruby-devel'
-include 'gcc-c++'
-
 js_runtime = "#{node[:kitchen][:javascript][:runtime][:url]}"
 js_runtime_pkg = "#{node[:kitchen][:javascript][:runtime][:package]}"
 repo = "#{node[:kitchen][:docs][:repo]}"
