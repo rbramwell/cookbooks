@@ -66,12 +66,14 @@ cookbook_file "/tmp/kitchen-docs/Gemfile" do
 	action :create
 end
 
+
+
 execute "Execute Bundler Install" do
 	cwd "/tmp/kitchen-docs"
-	command "/opt/chef/embedded/bin/bundle install"
+	command "bundle install"
 end
 
 execute "Run Middleman Server" do
 	cwd "/tmp/kitchen-docs"
-	command "/opt/chef/embedded/bin/bundle exec middleman server -p 11899"
+	command "bundle exec middleman server -p 11899"
 end
