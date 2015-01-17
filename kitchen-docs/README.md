@@ -1,46 +1,42 @@
 kitchen-docs Cookbook
 =====================
-TODO: Enter the cookbook description here.
+This cookbook installs the Test Kitchen documentation on a server behind a firewall.  Proxy access will be required to get to GitHub.  Improvements can be made regarding: 
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+A. The version of Ruby that executes bundler.  We have to add /usr/local/bin to root's password currently to execute bundler and start Middleman.
+B. Removing Middleman.  Middleman is a development server and doesn't like running as a background process.  Replace with nginx or Apache.
+C. The git block in the default recipe may need to be replaced to fetch artifacts from another source (Subversion)
+
+The server starts on port 11899 by default.  Security groups/firewalls must be opened to view the site.  Some HTML elements appear to be unavailable, not sure why.  Access to rubygems.org is assumed, include gems cookbook to overwrite /root/.gemrc if using a custom source.
 
 Requirements
-------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+==============
+Package requirements include:
+gcc-c++
+ruby-devel
+git
 
-e.g.
-#### packages
-- `toaster` - kitchen-docs needs toaster to brown your bagel.
+Gem requirements include:
+bootstrap-sass
+bundler
+middleman
+middleman-livereload (optional)
+middleman-syntax
+pry
+redcarpet
+slim
+therubyracer (consider replacing with better JavaScript runtime, like node)
+
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
-
-e.g.
-#### kitchen-docs::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['kitchen-docs']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+See attributes/default.rb
 
 Usage
 -----
+Ensure the kitchen-docs cookbook is available on the Chef Server or locally.  Ensure the git package is available on the system.
 #### kitchen-docs::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `kitchen-docs` in your node's `run_list`:
+Include `kitchen-docs` in your node's `run_list`:
 
 ```json
 {
@@ -53,9 +49,8 @@ Just include `kitchen-docs` in your node's `run_list`:
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
+Wanna help?
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
@@ -65,4 +60,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Dave Tashner 2015

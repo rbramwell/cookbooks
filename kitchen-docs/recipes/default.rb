@@ -23,6 +23,7 @@ cookbook_file "/root/.ssh/known_hosts" do
 	source "known_hosts"
 end
 
+
 #remote_file chef_pkg do
 #	action :create
 #	source chef_pkg_url
@@ -44,12 +45,6 @@ node[:gem_hash].each do |k,v|
 end
 end
 
-#execute "download code" do
-#	cwd "/tmp/" 
-#	command "git clone https://github.com/test-kitchen/kitchen-docs.git"
-#	not_if { File.exists?("/tmp/kitchen-docs/Gemfile")}
-#end
-
 cookbook_file ::File.join( ENV['HOME'], '.ssh', 'config' ) do
   source "ssh_config"
   mode 0644
@@ -66,6 +61,7 @@ cookbook_file "/tmp/kitchen-docs/Gemfile" do
 	action :create
 end
 
+# This may become unnecessary after we figure out a better server to run the site on than Middleman
 execute "Add /usr/local/bin to $PATH" do
 	command "export PATH=$PATH:/usr/local/bin"
 	user "root"
@@ -76,6 +72,7 @@ execute "Execute Bundler Install" do
 	command "/usr/local/bin/bundle install"
 end
 
+# Need to figure out a different server to run this site on; Middleman is a development server
 execute "Run Middleman Server" do
 	cwd "/tmp/kitchen-docs"
 	command "/usr/local/bin/bundle exec middleman server -p 11899"
