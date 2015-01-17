@@ -10,6 +10,9 @@
 #chef_pkg_url = "#{node[:kitchen][:chef][:url]}"
 #chef_pkg = "#{node[:kitchen][:chef][:package]}"
 
+include 'ruby-devel'
+include 'gcc-c++'
+
 js_runtime = "#{node[:kitchen][:javascript][:runtime][:url]}"
 js_runtime_pkg = "#{node[:kitchen][:javascript][:runtime][:package]}"
 repo = "#{node[:kitchen][:docs][:repo]}"
@@ -31,18 +34,6 @@ end
 
 #rpm_package chef_pkg do
 #end
-
-node[:kitchen][:packages].each do |pkg|
-	chef_package pkg do
-	action :install
-end
-end
-
-node[:gem_hash].each do |k,v|
-	chef_gem k do
-	action :install
-end
-end
 
 node[:kitchen][:packages].each do |pkg|
 	package pkg do
