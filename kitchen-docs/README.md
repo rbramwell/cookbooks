@@ -3,7 +3,9 @@ kitchen-docs Cookbook
 This cookbook installs the Test Kitchen documentation on a server behind a firewall.  Proxy access will be required to get to GitHub.  Improvements can be made regarding: 
 
 A. The version of Ruby that executes bundler.  We have to add /usr/local/bin to root's password currently to execute bundler and start Middleman.
+
 B. Removing Middleman.  Middleman is a development server and doesn't like running as a background process.  Replace with nginx or Apache.
+
 C. The git block in the default recipe may need to be replaced to fetch artifacts from another source (Subversion)
 
 The server starts on port 11899 by default.  Security groups/firewalls must be opened to view the site.  Some HTML elements appear to be unavailable, not sure why.  Access to rubygems.org is assumed, include gems cookbook to overwrite /root/.gemrc if using a custom source.
@@ -11,19 +13,31 @@ The server starts on port 11899 by default.  Security groups/firewalls must be o
 Requirements
 ==============
 Package requirements include:
+
 gcc-c++
+
 ruby-devel
+
 git
 
 Gem requirements include:
+
 bootstrap-sass
+
 bundler
+
 middleman
+
 middleman-livereload (optional)
+
 middleman-syntax
+
 pry
+
 redcarpet
+
 slim
+
 therubyracer (consider replacing with better JavaScript runtime, like node)
 
 
