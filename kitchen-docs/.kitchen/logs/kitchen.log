@@ -1,0 +1,194 @@
+I, [2015-01-16T14:57:03.652662 #10603]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-16T14:57:04.047530 #10603]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-01-16T15:12:55.552915 #10603]  INFO -- Kitchen: -----> Kitchen is finished. (15m51.90s)
+I, [2015-01-17T09:11:14.047502 #14483]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+E, [2015-01-17T09:11:14.397391 #14483] ERROR -- Kitchen: 
+No instances for regex `example-centos-66', try running `kitchen list'
+
+
+I, [2015-01-17T09:11:28.301514 #14513]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:11:28.555730 #14513]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T09:11:32.499715 #14513]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.20s)
+I, [2015-01-17T09:11:39.088499 #14557]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:11:39.350744 #14557]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-01-17T09:12:19.046603 #14557]  INFO -- Kitchen: -----> Kitchen is finished. (0m39.96s)
+I, [2015-01-17T09:12:25.267637 #14673]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:12:25.537094 #14673]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:12:45.519917 #14673] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:13:24.390820 #14690]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:13:24.659077 #14690]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:13:29.701378 #14690] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:13:49.163633 #14707]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:13:49.430866 #14707]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:13:54.322935 #14707] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:14:17.270906 #14724]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:14:17.534390 #14724]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:14:22.454185 #14724] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:14:39.914845 #14741]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:14:40.171956 #14741]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:15:03.148722 #14741] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:16:20.164941 #14760]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:16:20.426812 #14760]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:16:29.520262 #14760] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:17:01.706322 #14779]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:17:01.955194 #14779]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+I, [2015-01-17T09:25:50.971944 #14815]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:25:51.265867 #14815]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T09:25:54.846204 #14815]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.87s)
+I, [2015-01-17T09:26:00.314625 #14859]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:26:00.565467 #14859]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-66>
+I, [2015-01-17T09:26:00.565685 #14859]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T09:26:00.566998 #14859]  INFO -- Kitchen: -----> Testing <default-centos-66>
+I, [2015-01-17T09:26:00.567098 #14859]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-01-17T09:26:36.110333 #14859]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+I, [2015-01-17T09:32:14.684538 #15055]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:32:14.980220 #15055]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T09:32:18.596890 #15055]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.91s)
+I, [2015-01-17T09:32:24.696639 #15099]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:32:24.954604 #15099]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-66>
+I, [2015-01-17T09:32:24.954839 #15099]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T09:32:24.956287 #15099]  INFO -- Kitchen: -----> Testing <default-centos-66>
+I, [2015-01-17T09:32:24.956371 #15099]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-01-17T09:33:06.550758 #15099]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:33:26.581823 #15099] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:34:45.200566 #15217]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:34:45.464700 #15217]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-66>
+I, [2015-01-17T09:34:45.465386 #15217]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T09:34:49.026396 #15217]  INFO -- Kitchen: -----> Testing <default-centos-66>
+I, [2015-01-17T09:34:49.026531 #15217]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-01-17T09:35:28.408560 #15217]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:35:48.355233 #15217] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:36:26.297705 #15369]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:36:26.555788 #15369]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:36:31.440969 #15369] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:36:47.954689 #15385]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:36:48.214657 #15385]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:41:08.296573 #15385] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+E, [2015-01-17T09:42:24.286223 #15410] ERROR -- Kitchen: ------Exception-------
+E, [2015-01-17T09:42:24.286590 #15410] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-01-17T09:42:24.286624 #15410] ERROR -- Kitchen: Message: Error parsing /Users/dtashner/Documents/DevOps/Chef/chef-repo/cookbooks/kitchen-docs/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-01-17T09:42:24.286645 #15410] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-01-17T09:42:24.286664 #15410] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-01-17T09:42:24.286683 #15410] ERROR -- Kitchen: Message: (<unknown>): found character that cannot start any token while scanning for the next token at line 17 column 5
+E, [2015-01-17T09:42:24.286702 #15410] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-01-17T09:42:24.286720 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-01-17T09:42:24.286740 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-01-17T09:42:24.286759 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-01-17T09:42:24.286778 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-01-17T09:42:24.286797 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-01-17T09:42:24.286816 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:139:in `data'
+E, [2015-01-17T09:42:24.286835 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:118:in `suites'
+E, [2015-01-17T09:42:24.286853 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-01-17T09:42:24.286885 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-01-17T09:42:24.286906 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:104:in `instances'
+E, [2015-01-17T09:42:24.286925 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-01-17T09:42:24.286944 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-01-17T09:42:24.286962 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command/login.rb:32:in `call'
+E, [2015-01-17T09:42:24.286985 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-01-17T09:42:24.287004 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:218:in `login'
+E, [2015-01-17T09:42:24.287023 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-01-17T09:42:24.287041 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-01-17T09:42:24.287059 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-01-17T09:42:24.287077 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-01-17T09:42:24.287096 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-01-17T09:42:24.287115 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-01-17T09:42:24.287133 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-01-17T09:42:24.287155 #15410] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/bin/kitchen:13:in `<top (required)>'
+E, [2015-01-17T09:42:24.287174 #15410] ERROR -- Kitchen: /usr/bin/kitchen:23:in `load'
+E, [2015-01-17T09:42:24.287192 #15410] ERROR -- Kitchen: /usr/bin/kitchen:23:in `<main>'
+E, [2015-01-17T09:42:24.287210 #15410] ERROR -- Kitchen: ----------------------
+E, [2015-01-17T09:43:06.991021 #15419] ERROR -- Kitchen: ------Exception-------
+E, [2015-01-17T09:43:06.991383 #15419] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-01-17T09:43:06.991415 #15419] ERROR -- Kitchen: Message: Error parsing /Users/dtashner/Documents/DevOps/Chef/chef-repo/cookbooks/kitchen-docs/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-01-17T09:43:06.991439 #15419] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-01-17T09:43:06.991460 #15419] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-01-17T09:43:06.991481 #15419] ERROR -- Kitchen: Message: (<unknown>): found character that cannot start any token while scanning for the next token at line 17 column 5
+E, [2015-01-17T09:43:06.991502 #15419] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-01-17T09:43:06.991523 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-01-17T09:43:06.991544 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-01-17T09:43:06.991566 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-01-17T09:43:06.991588 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-01-17T09:43:06.991609 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-01-17T09:43:06.991631 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:139:in `data'
+E, [2015-01-17T09:43:06.991673 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:118:in `suites'
+E, [2015-01-17T09:43:06.991697 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-01-17T09:43:06.991719 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-01-17T09:43:06.991740 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:104:in `instances'
+E, [2015-01-17T09:43:06.991762 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-01-17T09:43:06.991783 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-01-17T09:43:06.991805 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command/login.rb:32:in `call'
+E, [2015-01-17T09:43:06.991826 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-01-17T09:43:06.991847 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:218:in `login'
+E, [2015-01-17T09:43:06.991868 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-01-17T09:43:06.991890 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-01-17T09:43:06.991911 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-01-17T09:43:06.991932 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-01-17T09:43:06.991954 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-01-17T09:43:06.991975 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-01-17T09:43:06.991996 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-01-17T09:43:06.992017 #15419] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/bin/kitchen:13:in `<top (required)>'
+E, [2015-01-17T09:43:06.992038 #15419] ERROR -- Kitchen: /usr/bin/kitchen:23:in `load'
+E, [2015-01-17T09:43:06.992059 #15419] ERROR -- Kitchen: /usr/bin/kitchen:23:in `<main>'
+E, [2015-01-17T09:43:06.992080 #15419] ERROR -- Kitchen: ----------------------
+E, [2015-01-17T09:43:15.496517 #15424] ERROR -- Kitchen: ------Exception-------
+E, [2015-01-17T09:43:15.496594 #15424] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-01-17T09:43:15.496637 #15424] ERROR -- Kitchen: Message: Error parsing /Users/dtashner/Documents/DevOps/Chef/chef-repo/cookbooks/kitchen-docs/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-01-17T09:43:15.496678 #15424] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-01-17T09:43:15.496704 #15424] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-01-17T09:43:15.496728 #15424] ERROR -- Kitchen: Message: (<unknown>): found character that cannot start any token while scanning for the next token at line 17 column 5
+E, [2015-01-17T09:43:15.496757 #15424] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-01-17T09:43:15.496783 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-01-17T09:43:15.496808 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-01-17T09:43:15.496833 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-01-17T09:43:15.496875 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-01-17T09:43:15.496903 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-01-17T09:43:15.496928 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:139:in `data'
+E, [2015-01-17T09:43:15.496953 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:118:in `suites'
+E, [2015-01-17T09:43:15.496978 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-01-17T09:43:15.497006 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-01-17T09:43:15.497032 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/config.rb:104:in `instances'
+E, [2015-01-17T09:43:15.497057 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-01-17T09:43:15.497081 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-01-17T09:43:15.497106 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/command/list.rb:32:in `call'
+E, [2015-01-17T09:43:15.497130 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-01-17T09:43:15.497155 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:97:in `list'
+E, [2015-01-17T09:43:15.497179 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-01-17T09:43:15.497204 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-01-17T09:43:15.497232 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-01-17T09:43:15.497257 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-01-17T09:43:15.497282 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-01-17T09:43:15.497306 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-01-17T09:43:15.497331 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-01-17T09:43:15.497355 #15424] ERROR -- Kitchen: /Library/Ruby/Gems/2.0.0/gems/test-kitchen-1.3.0/bin/kitchen:13:in `<top (required)>'
+E, [2015-01-17T09:43:15.497380 #15424] ERROR -- Kitchen: /usr/bin/kitchen:23:in `load'
+E, [2015-01-17T09:43:15.497404 #15424] ERROR -- Kitchen: /usr/bin/kitchen:23:in `<main>'
+E, [2015-01-17T09:43:15.497429 #15424] ERROR -- Kitchen: ----------------------
+I, [2015-01-17T09:49:33.040921 #15453]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:49:33.422965 #15453]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:49:43.239955 #15453] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:50:05.482341 #15470]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:50:05.739628 #15470]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:50:13.384458 #15470] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:51:00.086452 #15491]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:51:00.351319 #15491]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:51:07.924138 #15491] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:53:57.670688 #15512]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:53:58.015959 #15512]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:54:05.468897 #15512] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:54:17.494877 #15529]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:54:17.739740 #15529]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+E, [2015-01-17T09:54:25.161734 #15529] ERROR -- Kitchen: Converge failed on instance <default-centos-66>.
+I, [2015-01-17T09:58:37.408813 #15576]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T09:58:37.764076 #15576]  INFO -- Kitchen: -----> Converging <default-centos-66>...
+I, [2015-01-17T10:08:46.039277 #15620]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T10:08:46.395377 #15620]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T10:08:50.184563 #15620]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.14s)
+I, [2015-01-17T10:08:55.003964 #15668]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.0)
+I, [2015-01-17T10:08:55.270406 #15668]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-66>
+I, [2015-01-17T10:08:55.270641 #15668]  INFO -- Kitchen: -----> Destroying <default-centos-66>...
+I, [2015-01-17T10:08:55.271934 #15668]  INFO -- Kitchen: -----> Testing <default-centos-66>
+I, [2015-01-17T10:08:55.272024 #15668]  INFO -- Kitchen: -----> Creating <default-centos-66>...
+I, [2015-01-17T10:09:33.096359 #15668]  INFO -- Kitchen: -----> Converging <default-centos-66>...
