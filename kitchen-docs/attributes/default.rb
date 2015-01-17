@@ -17,6 +17,10 @@ default[:gem_hash] = {
 		version: "1.7.12",
 		extension: "gem"
 	},
+	"markdown-server" => {
+		version: "0.1.1",
+		extension: "gem"
+	},
 	"middleman" => {
 		version: "3.3.7",
 		extension: "gem"

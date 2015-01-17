@@ -12,6 +12,7 @@
 
 js_runtime = "#{node[:kitchen][:javascript][:runtime][:url]}"
 js_runtime_pkg = "#{node[:kitchen][:javascript][:runtime][:package]}"
+
 repo = "#{node[:kitchen][:docs][:repo]}"
 
 directory "/root/.ssh" do
@@ -23,6 +24,21 @@ cookbook_file "/root/.ssh/known_hosts" do
 	source "known_hosts"
 end
 
+directory "/opt/node" do
+	action :create
+end
+
+remote_file js_runtime_pkg do
+	action :create
+	source js_runtime
+end
+
+execute "tar -zxvf /tmp/node.tar.gz -C /opt/node"
+
+# Add node executable to $PATH
+execute "Add node.js to $PATH" do
+	command "export PATH=$PATH:/"
+end
 
 #remote_file chef_pkg do
 #	action :create
@@ -61,20 +77,24 @@ cookbook_file "/tmp/kitchen-docs/Gemfile" do
 	action :create
 end
 
+chef_gem "bundler" do
+	action :install
+end
+
 # This may become unnecessary after we figure out a better server to run the site on than Middleman
 execute "Add /usr/local/bin to $PATH" do
-	command "export PATH=$PATH:/usr/local/bin"
+	command "export PATH=$PATH:/opt/chef/embedded/bin"
 	user "root"
 end
 
 execute "Execute Bundler Install" do
 	cwd "/tmp/kitchen-docs"
-	command "/usr/local/bin/bundle install"
+	command "bundle install"
 end
 
 # Need to figure out a different server to run this site on; Middleman is a development server
 execute "Run Middleman Server" do
 	cwd "/tmp/kitchen-docs"
-	command "/usr/local/bin/bundle exec middleman server -p 11899"
+	command "bundle exec middleman server -p 11899"
 	user "root"
 end
