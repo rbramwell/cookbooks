@@ -12,7 +12,7 @@ The server starts on port 11899 by default.  Security groups/firewalls must be o
 
 Requirements
 ==============
-Package requirements include:
+*Package requirements include:*
 
 gcc-c++
 
@@ -20,7 +20,7 @@ ruby-devel
 
 git
 
-Gem requirements include:
+*Gem requirements include:*
 
 bootstrap-sass
 
