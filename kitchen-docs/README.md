@@ -2,9 +2,9 @@ kitchen-docs Cookbook
 =====================
 This cookbook installs the Test Kitchen documentation on a server behind a firewall.  Proxy access will be required to get to GitHub.  Improvements can be made regarding: 
 
-B. Removing Middleman.  Middleman is a development server and doesn't like running as a background process.  Replace with nginx or Apache.
+A. Removing Middleman.  Middleman is a development server and doesn't like running as a background process.  Replace with nginx or Apache.
 
-C. The git block in the default recipe may need to be replaced to fetch artifacts from another source (Subversion)
+B. The git block in the default recipe may need to be replaced to fetch artifacts from another source (Subversion)
 
 The server starts on port 11899 by default.  If running in Test Kitchen, the default port that Middleman starts on (4567) is forwarded to port 11899 (see .kitchen.yml). Security groups/firewalls must be opened to view the site.  Some HTML elements appear to be unavailable, not sure why.  Access to rubygems.org is assumed, include gems cookbook to overwrite /root/.gemrc if using a custom source.
 
