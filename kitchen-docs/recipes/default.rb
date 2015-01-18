@@ -99,12 +99,12 @@ end
 
 execute "Execute Bundler Install" do
 	cwd "/tmp/kitchen-docs"
-	command "bundle install"
+	command "/usr/local/bin/bundle install"
 end
 
 # Need to figure out a different server to run this site on; Middleman is a development server
 execute "Run Middleman Server" do
 	cwd "/tmp/kitchen-docs"
-	command "bundle exec middleman server -p 11899"
+	command "/usr/local/bin/bundle exec middleman server -p 11899"
 	user "root"
 end
