@@ -1,7 +1,7 @@
 name             'kitchen-docs'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'SingleStone'
+maintainer_email 'dtashner@singlestoneconsulting.com'
 license          'All rights reserved'
-description      'Installs/Configures kitchen-docs'
+description      'Installs Test Kitchen documentation.'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
