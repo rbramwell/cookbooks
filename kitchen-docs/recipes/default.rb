@@ -55,6 +55,16 @@ node[:kitchen][:packages].each do |pkg|
 end
 end
 
+gem_package "nokogiri" do
+	gem_binary("/opt/chef/embedded/bin/gem")
+	options("--use-system-libraries=true --with-xml2-include=/usr/include/libxml2/")
+end
+
+# Install Nokogiri with options
+#execute "Install Nokogiri" do
+#	command "opt/chef/embedded/bin/gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/usr/include/libxml2/"
+#end
+
 node[:gem_hash].each do |k,v|
 	gem_package k do
 	action :install

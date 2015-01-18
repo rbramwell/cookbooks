@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem "middleman"
 gem "therubyracer"
+gem "markdown-server"
+gem "rails"
+gem "rdoc"
+gem "rake"
+gem "nokogiri"
 
 gem "slim"
 gem "pry"

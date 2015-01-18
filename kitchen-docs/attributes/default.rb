@@ -6,7 +6,7 @@ default[:kitchen][:javascript][:runtime][:package] = "/tmp/node.tar.gz"
 
 default[:kitchen][:docs][:repo] = "https://github.com/test-kitchen/kitchen-docs.git"
 
-default[:kitchen][:packages] = [ "git", "ruby-devel", "gcc-c++" ]
+default[:kitchen][:packages] = [ "git", "ruby-devel", "libxml2", "libxml2-devel", "libxslt-devel", "gcc-c++" ]
 
 default[:gem_hash] = {
 	"bootstrap-sass" => {
@@ -31,6 +31,14 @@ default[:gem_hash] = {
 	},
 	"middleman-syntax" => {
 		version: "2.0.0",
+		extension: "gem"
+	},
+	"mini_portile" => {
+		version: "0.6.0",
+		extension: "gem"
+	},
+	"nokogiri" => {
+		version: "1.6.5",
 		extension: "gem"
 	},
 	"pry" => {
