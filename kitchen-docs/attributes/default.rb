@@ -33,14 +33,6 @@ default[:gem_hash] = {
 		version: "2.0.0",
 		extension: "gem"
 	},
-	"mini_portile" => {
-		version: "0.6.0",
-		extension: "gem"
-	},
-	"nokogiri" => {
-		version: "1.6.5",
-		extension: "gem"
-	},
 	"pry" => {
 		version: "0.10.1",
 		extension: "gem"
