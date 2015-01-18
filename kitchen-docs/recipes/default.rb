@@ -93,7 +93,7 @@ end
 
 # This may become unnecessary after we figure out a better server to run the site on than Middleman
 execute "Add /usr/local/bin to $PATH" do
-	command "export PATH=$PATH:/opt/chef/embedded/bin"
+	command "export PATH=$PATH:/opt/chef/embedded/bin:/usr/local/bin"
 	user "root"
 end
 
