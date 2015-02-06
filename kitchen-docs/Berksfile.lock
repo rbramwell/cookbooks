@@ -1,0 +1,7 @@
+DEPENDENCIES
+  kitchen-docs
+    path: .
+    metadata: true
+
+GRAPH
+  kitchen-docs (0.1.0)

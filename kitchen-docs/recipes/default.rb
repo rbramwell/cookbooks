@@ -36,9 +36,9 @@ end
 execute "tar -zxvf /tmp/node.tar.gz -C /opt/node"
 
 # Add node executable to $PATH
-execute "Add node.js to $PATH" do
-	command "export PATH=$PATH:/"
-end
+#execute "Add node.js to $PATH" do
+#	command "export PATH=$PATH:/"
+#end
 
 #remote_file chef_pkg do
 #	action :create
