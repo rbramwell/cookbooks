@@ -14,8 +14,8 @@ require 'spec_helper'
 		expect(chef_run).to render_file('/root/.ssh/known_hosts')
 	end
 
-	it 'creates root\'s .ssh directory' do
-		expect(chef_run).to create_directory('/root/.ssh')
+	it 'creates the nodejs installation directory' do
+		expect(chef_run).to create_directory('/opt/node')
 	end
 
 	it 'downloads nodejs package' do
