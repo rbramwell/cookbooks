@@ -1,12 +1,8 @@
 kitchen-docs Cookbook
 =====================
-This cookbook installs the Test Kitchen documentation on a server behind a firewall.  Proxy access will be required to get to GitHub.  Improvements can be made regarding: 
+This cookbook installs the Test Kitchen documentation on a server behind a firewall.  Proxy access will be required to get to GitHub.
 
-A. Removing Middleman.  Middleman is a development server and doesn't like running as a background process.  Replace with nginx or Apache.
-
-B. The git block in the default recipe may need to be replaced to fetch artifacts from another source (Subversion)
-
-The server starts on port 11899 by default.  If running in Test Kitchen, the default port that Middleman starts on (4567) is forwarded to port 11899 (see .kitchen.yml). Security groups/firewalls must be opened to view the site.  Some HTML elements appear to be unavailable, not sure why.  Access to rubygems.org is assumed, include gems cookbook to overwrite /root/.gemrc if using a custom source.
+The server starts in the background on port 11899 by default.  If running in Test Kitchen, the default port that Middleman starts on (4567) is forwarded to port 11899 (see .kitchen.yml). Security groups/firewalls must be opened to view the site.  Some HTML elements appear to be unavailable, not sure why.  Access to rubygems.org is assumed, include gems cookbook to overwrite /root/.gemrc if using a custom source.
 
 Requirements
 ==============
@@ -23,6 +19,8 @@ gcc-c++
 ruby-devel
 
 git
+
+nc (purely for testing proxy)
 
 *Gem requirements include:*
 
@@ -64,6 +62,10 @@ Include `kitchen-docs` in your node's `run_list`:
   ]
 }
 ```
+
+Testing
+-------
+Full ServerSpec coverage has been added for this cookbook in ~/kitchen-docs/test/integration/serverspec/server_spec.rb.  To execute the tests, run 'kitchen verify <BOX_NAME>'. 
 
 Contributing
 ------------
