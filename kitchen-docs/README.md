@@ -65,7 +65,7 @@ Include `kitchen-docs` in your node's `run_list`:
 
 Testing
 -------
-Full ServerSpec coverage has been added for this cookbook in ~/kitchen-docs/test/integration/serverspec/server_spec.rb.  To execute the tests, run 'kitchen verify <BOX_NAME>'. 
+Full ServerSpec coverage has been added for this cookbook in ~/kitchen-docs/test/integration/serverspec/server_spec.rb.  To execute the tests, run 'kitchen verify [BOX_NAME]'. 
 
 Contributing
 ------------
