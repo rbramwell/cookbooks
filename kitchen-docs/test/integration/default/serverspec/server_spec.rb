@@ -111,7 +111,11 @@ describe file('/tmp/kitchen-docs/Gemfile'), :if => os[:family] == 'redhat' do
                 it { should contain("source 'https://rubygems.org'").before(/^end/) }
                 it { should contain(":platforms => [:mswin, :mingw]").before(/^end/) }
 end
- 
+
+describe host('rubygems.org'), :if => os[:family] == 'redhat' do
+                it { should be_reachable.with( :port => 443, :proto => 'tcp' ) }
+end
+
 describe service('middleman'), :if => os[:family] == 'redhat' do
                 it {should be_running}
 end
