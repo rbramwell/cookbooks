@@ -102,9 +102,8 @@ execute "Execute Bundler Install" do
 	command "/opt/chef/embedded/bin/bundle install"
 end
 
-# Need to figure out a different server to run this site on; Middleman is a development server
-#execute "Run Middleman Server" do
-#	cwd "/tmp/kitchen-docs"
-#	command "/opt/chef/embedded/bin/bundle exec middleman server -p 11899"
-#	user "root"
-#end
+execute "Run Middleman Server" do
+	cwd "/tmp/kitchen-docs"
+	command "nohup /opt/chef/embedded/bin/bundle exec middleman server -p 11899 >/dev/null 2>&1 &"
+	user "root"
+end
