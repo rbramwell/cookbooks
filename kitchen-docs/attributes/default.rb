@@ -6,7 +6,7 @@ default[:kitchen][:javascript][:runtime][:package] = "/tmp/node.tar.gz"
 
 default[:kitchen][:docs][:repo] = "https://github.com/test-kitchen/kitchen-docs.git"
 
-default[:kitchen][:packages] = [ "git", "ruby-devel", "libxml2", "libxml2-devel", "libxslt-devel", "gcc-c++" ]
+default[:kitchen][:packages] = [ "git", "ruby-devel", "libxml2", "libxml2-devel", "libxslt-devel", "gcc-c++", "nc" ]
 
 default[:gem_hash] = {
 	"bootstrap-sass" => {
