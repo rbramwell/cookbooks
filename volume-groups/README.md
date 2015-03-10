@@ -1,10 +1,10 @@
-# volume-groups-cookbook
+# volume-groups Cookbook
 
-TODO: Enter the cookbook description here.
+I needed this functionality for local testing with Test Kitchen; we are not yet using the kitchen-ec2 driver to spin up AMIs containing company-specific filesystems, so we needed a way to create new volume groups on blank CentOS boxes.  This cookbook should be included in the .kitchen.yml file's run list for any other cookbook that depends on volume groups for installing filesystems.  That dependent cookbook's Berksfile must contain the path on your local filesystem to the volume-groups cookbook.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+RedHat
 
 ## Attributes
 
@@ -39,4 +39,4 @@ Include `volume-groups` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Dave Tashner (dtashner@singlestoneconsulting.com) 2015
