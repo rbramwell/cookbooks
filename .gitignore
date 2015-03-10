@@ -1,3 +1,4 @@
+.DS_Store
 .kitchen
 nodejs
 kitchen-docs/files/default/rails_rakefile
