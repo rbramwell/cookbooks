@@ -1,0 +1,16 @@
+BLK1=${HOME}/block_device1
+BLK2=${HOME}/block_device2
+APPVG_SIZE=<%= node['appvg']['volume_size'] %>
+OPTVG_SIZE=<%= node['optvg']['volume_size'] %>
+APPVG_LOOP=<%= node['appvg']['loop'] %>
+OPTVG_LOOP=<%= node['optvg']['loop'] %>
+
+# Create appvg
+dd of=$BLK1 if=/dev/zero bs=1M count=$APPVG_SIZE
+losetup $APPVG_LOOP $BLK1
+vgcreate appvg $APPVG_LOOP
+
+# Create optvg
+dd of=$BLK2 if=/dev/zero bs=1M count=$OPTVG_SIZE
+losetup $OPTVG_LOOP $BLK2
+vgcreate optvg $OPTVG_LOOP
