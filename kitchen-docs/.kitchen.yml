@@ -1,0 +1,43 @@
+---
+driver:
+  name: ec2
+  associate_public_ip: true
+  availability_zone: us-east-1d
+  aws_access_key_id: "<%= ENV['AWS_ACCESS_KEY_ID']%>"
+  aws_secret_access_key: "<%= ENV['AWS_SECRET_ACCESS_KEY']%>"
+  aws_ssh_key_id: "<%= ENV['AWS_SSH_KEY_ID']%>"
+  ebs_delete_on_termination: true
+  flavor_id: t2.micro
+  region: us-east-1
+  require_chef_omnibus: true
+  chef_omnibus_url: https://www.chef.io/chef/install.sh
+  security_group_ids: ["sg-07bc8963"]
+  ssh_key: "<%= ENV['SSH_KEY']%>"
+  subnet_id: subnet-4615346e
+  ssh_timeout: 10
+  ssh_retries: 5
+  tags:
+    Name: test-kitchen-pipeline
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+    driver:
+      image_id: ami-d05e75b8
+      username: ec2-user
+  - name: amazon-linux-2015.03
+    driver:
+      image_id: ami-1ecae776
+      username: ec2-user
+  - name: rhel-7.1
+    driver:
+      image_id: ami-12663b7a
+      username: ec2-user
+
+suites:
+  - name: kitchen-docs
+    run_list:
+        - recipe[kitchen-docs::default]
+    attributes:
