@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+  network:
+      - ["forwarded_port", {guest: 8080, host: 9000}]
+      - ["forwarded_port", {guest: 80, host: 9001}]
+      - ["private_network", {ip: "192.168.33.34"}]
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-7.1
+
+suites:
+  - name: default
+    run_list:
+      - recipe[serverspec_example::default]
+    attributes:

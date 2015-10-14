@@ -19,7 +19,7 @@ describe file('/var/www/html/index.html') do
   it { should be_file }
   it { should be_owned_by 'apache' }
   it { should be_grouped_into 'apache' }
-  it { should be_mode 644 }
+  it { should be_mode 755 }
   it { should contain('Hello World!').before(/^end/) }
 end
 
