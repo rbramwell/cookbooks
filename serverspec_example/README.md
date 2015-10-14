@@ -1,68 +1,36 @@
 serverspec_example Cookbook
 ===========================
-TODO: Enter the cookbook description here.
+This cookbook is designed purely as an example for Serverspec tests.  It installs Jenkins and Apache along with a few dependencies and provides support for automatically running Serverspec tests via Test Kitchen. Test Kitchen will automatically forward ports 8080 and 80 from the test virtual machine to 9000 and 9001 on the host so that Jenkins and Apache are visible. 
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+To run the example, make sure Xcode command line tools, Git, Vagrant, and VirtualBox are installed.  Then, install the test-kitchen and kitchen-vagrant RubyGems.
 
 e.g.
 #### packages
-- `toaster` - serverspec_example needs toaster to brown your bagel.
+- `Xcode command line tools`
+- `git`
+- `Vagrant`
+- `VirtualBox`
+
+#### gems
+- `test-kitchen`
+- `kitchen-vagrant`
+
+
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
-
-e.g.
-#### serverspec_example::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['serverspec_example']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+TODO: Refactor cookbook to use attributes.
 
 Usage
 -----
 #### serverspec_example::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `serverspec_example` in your node's `run_list`:
-
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[serverspec_example]"
-  ]
-}
-```
-
-Contributing
-------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
-1. Fork the repository on Github
-2. Create a named feature branch (like `add_component_x`)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
+Just run `kitchen verify` from the serverspec_example root and wait.  Run `kitchen destroy` to clean up the test instance.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Dave Tashner 2015
+
