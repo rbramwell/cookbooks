@@ -17,7 +17,7 @@ Packages = {
     version: '2.4.6'
   },
   'jenkins' => {
-    version: '1.6*'
+    version: '1.634'
   }
 }
 
